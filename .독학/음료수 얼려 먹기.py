@@ -26,3 +26,4 @@ for i in range(n):
             cnt+=1
 
 print(cnt)
+#github수정
