@@ -1,14 +1,1 @@
-from sys import stdin
-
-sugar=int(stdin.readline().strip())
-
-d=[1001]*(sugar+5)
-d[3]=1
-d[5]=1
-for i in range(6,sugar+1):
-    sugar[i]=min(sugar[i-3],sugar[i-5])+1
-
-if d[sugar]==1001:
-    print(-1)
-else:
-    print(d[sugar])
+{"author":"pocard0117_uckia9fdp","name":"Boj-recording","type":"python","detailedtype":"default","description":"백준및 문풀을 파이썬으로 풀기위한 공간","date":"2022-07-17T10:24:07.000Z","plugins":{"goorm.plugin.python":[{"plugin.python.compiler_type":"python3","plugin.python.main":"index","plugin.python.source_path":"","plugin.python.run_on":"console","plugin.python.run_option":"","plugin.python.log_path":"./server.log","name":"python"}]},"is_user_plugin":false,"storage":"container","project_domain":[{"id":"pocard0117_uckia9fdp","url":"boj-recording-kisbh.run.goorm.io","port":"80"}],"author_email":"pocard0117@naver.com","author_name":"직두","ignore_patterns":[],"visibility":2}
