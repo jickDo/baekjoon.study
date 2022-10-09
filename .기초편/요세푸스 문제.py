@@ -7,9 +7,10 @@ for i in range(1,num+1):
 rem=[]
 cnt=0
 
-for i in range(num):
+for t in range(num):
     cnt += k-1
-    if num>=len(arr):
-        num = num%len(arr)
+    if cnt>=len(arr):
+        cnt = cnt%len(arr)
     
     rem.append(str(arr.pop(cnt)))
+print("<",', '.join(rem),">",sep='')
